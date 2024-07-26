@@ -202,6 +202,29 @@ button#nav-login-button {
     font-size: 22px;
 }
 
+/* USP */
+.usp {
+    padding: 60px 20px 10px;
+}
+.usp-img {
+    max-width: 100%;
+}
+.usp-img img {
+    width: 100%;
+    height: auto;
+}
+.usp-blocks {
+    padding: 40px;
+}
+.usp-block {
+    margin-bottom: 30px;
+}
+.usp-block-icon {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
 /* CALCULATOR */
 .investment-calculator {
     margin: 40px 30px;

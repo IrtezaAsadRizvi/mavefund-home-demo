@@ -25,6 +25,15 @@
     text-transform: none !important;
     color: inherit !important;
     text-align: center;
+    margin-top: 0;
+}
+.section-icon {
+    text-align: center;
+}
+.section-icon img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .section-text {
@@ -233,9 +242,9 @@ button#nav-login-button {
 .usp-block {
     margin-bottom: 30px;
 }
-.usp-block-icon {
-    font-size: 36px;
-    color: var(--primary);
+.usp-block-icon img{
+    width: 60px;
+    height: auto;
     margin-bottom: 10px;
 }
 
@@ -342,7 +351,7 @@ input::-moz-focus-outer {
 
 /* BLOG */
 .blog-container {
-    padding: 60px 0 100px;
+    padding: 80px 0 100px;
 }
 .blogs {
     padding-top: 30px;
@@ -350,7 +359,8 @@ input::-moz-focus-outer {
 .blog {
     display: block;
     text-decoration: none !important;
-    
+    width: 90%;
+    margin: 0 auto;
 }
 .blog:hover p {
     text-decoration: underline !important;

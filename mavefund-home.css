@@ -1,0 +1,261 @@
+:root {
+    --primary: #4ECDA4;
+    --secondary-dark: #3C3D48;
+    --primary-bg: #22252F;
+    --text: #FFFFFF;
+}
+
+.container {
+    margin: 44px auto !important;
+}
+.main-container {
+    max-width: 1200px;
+}
+
+.nav-logo-container {
+    display: flex;
+}
+
+.navbar-brand img {
+    width: 80px;
+    height: auto;
+}
+
+.home-navbar {
+    margin-top: 44px;
+}
+
+button#nav-signup-button {
+    background-color: transparent !important;
+}
+
+button#nav-logout-button,
+button#nav-login-button {
+    background-color: var(--primary) !important;
+}
+
+/* HERO */
+
+.hero {
+    margin: 40px auto;
+}
+
+.hero-text {
+    color: var(--text);
+}
+
+.hero-text h1 {
+    max-width: 450px;
+}
+
+.hero-text h1 span {
+    color: var(--primary);
+}
+
+.hero-text p {
+    max-width: 550px;
+    font-size: 18px;
+}
+
+.hero-text button {
+    background: transparent !important;
+    padding: 0;
+    font-size: 18px;
+}
+
+.hero-text button span {
+    font-weight: 500;
+    color: var(--primary);
+    font-size: 22px;
+}
+
+.hero-img {
+    position: relative;
+}
+
+.hero-img::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(50%) translateY(50%);
+    content: '';
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--primary);
+    z-index: -1;
+    box-shadow:
+        0 0 60px 30px var(--primary),
+        /* inner white */
+        0 0 160px 60px var(--primary),
+        /* middle magenta */
+        0 0 140px 90px var(--primary-bg);
+    /* outer cyan */
+}
+
+.hero-img img {
+    z-index: 10;
+}
+
+/* SEARCH */
+.search-container {
+    height: auto !important;
+    padding: 60px 20px;
+}
+
+.search {
+    width: 100% !important;
+    max-width: 950px;
+    margin: 30px auto;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    height: auto !important;
+    overflow: hidden;
+}
+
+.search input {
+    border: none;
+    background-color: transparent;
+    color: var(--text);
+}
+
+.search .logos {}
+
+.search .logos .logo {
+    margin: 0 5px;
+}
+
+.search .logos .logo img {
+    height: 24px;
+    width: 24px;
+}
+
+.search button {
+    background-color: var(--primary);
+}
+
+/* USP */
+.usp {
+    color: var(--text);
+    font-size: 18px;
+    height: 100%;
+    align-items: baseline;
+}
+
+.usp p span {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.usp button {
+    background: transparent !important;
+    padding: 0;
+    font-size: 18px;
+}
+
+.usp button span {
+    font-weight: 500;
+    color: var(--primary);
+    font-size: 22px;
+}
+
+/* CALCULATOR */
+.investment-calculator {
+    margin: 40px 30px;
+}
+
+.range-slider {}
+
+.range-slider {
+    width: 90%;
+}
+
+.range-slider__range {
+    -webkit-appearance: none;
+    width: calc(100% - (73px));
+    height: 10px;
+    border-radius: 5px;
+    background: #596165;
+    outline: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.range-slider__range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--primary);
+    cursor: pointer;
+    -webkit-transition: background 0.15s ease-in-out;
+    transition: background 0.15s ease-in-out;
+}
+
+.range-slider__range::-webkit-slider-thumb:hover {
+    background: #1abc9c;
+}
+
+.range-slider__range:active::-webkit-slider-thumb {
+    background: #1abc9c;
+}
+
+.range-slider__range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-radius: 50%;
+    background: #2c3e50;
+    cursor: pointer;
+    -moz-transition: background 0.15s ease-in-out;
+    transition: background 0.15s ease-in-out;
+}
+
+.range-slider__range::-moz-range-thumb:hover {
+    background: #1abc9c;
+}
+
+.range-slider__range:active::-moz-range-thumb {
+    background: #1abc9c;
+}
+
+.range-slider__range:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 6px #1abc9c;
+}
+
+.range-slider__value {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    color: #fff;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: var(--primary);
+    padding: 2px 8px;
+    margin-left: 8px;
+    top: 2px;
+}
+
+.range-slider__value:after {
+    position: absolute;
+    top: 5px;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid var(--primary);
+    border-bottom: 7px solid transparent;
+    content: "";
+}
+
+::-moz-range-track {
+    background: #d7dcdf;
+    border: 0;
+}
+
+input::-moz-focus-inner,
+input::-moz-focus-outer {
+    border: 0;
+}

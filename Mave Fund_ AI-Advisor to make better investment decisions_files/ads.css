@@ -1,0 +1,35 @@
+.mav-leaderboard-container {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    margin: 40px 0;
+}
+
+.middle {
+    margin: 40px 0 0;
+}
+
+.bottom {
+    margin: 40px 0 0;
+}
+
+.leaderboard {
+    width: 320px;
+    height: 100px;
+}
+
+@media (min-width:500px) {
+    .leaderboard {
+        width: 468px;
+        height: 60px;
+    }
+}
+
+@media (min-width:800px) {
+    .leaderboard {
+        width: 728px;
+        height: 90px;
+    }
+}

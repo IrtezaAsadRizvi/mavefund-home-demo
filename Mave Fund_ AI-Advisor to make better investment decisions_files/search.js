@@ -1,0 +1,4 @@
+function setupSearch(){$("#search-input").focusout(()=>{setTimeout(()=>$("#search-results").empty(),200)})
+$("#search-input").keyup(function(e){const query=$(this).val();if(query.trim()==""){$("#search-results").empty();return}
+$.ajax({url:`https://www.mavefund.com/api/v1/info/search?q=${query}`,success:function(res){$("#search-results").empty();for(let key in res){if(res[key]){for(let tp of[false,true]){$("#search-results").append(`<a class="result" href="/company?key=${key}"><span><span class="search-result-ticker">${key}</span>${res[key]}</span><span class="search-result-time-period">${tp?"quarterly":"yearly"}</span></a>`);}}}},error:function(err){console.error(err);},});});}
+$(document).ready(function(){setupSearch()});

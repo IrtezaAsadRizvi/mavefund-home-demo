@@ -19,6 +19,10 @@
     background-color: var(--section-dark-bg);
     color: var(--light);
 }
+.section-primary {
+    background-color: var(--primary);
+    color: var(--light);
+}
 .section-title {
     font-weight: 400;
     font-size: 28px;
@@ -48,6 +52,9 @@
 .section-title span, .section-text span {
     color: var(--primary);
     font-weight: 500;
+}
+.section-primary .section-title span, .section-text span {
+    color: var(--text) !important;
 }
 
 .section-container {
@@ -347,6 +354,85 @@ button#nav-login-button {
 input::-moz-focus-inner,
 input::-moz-focus-outer {
     border: 0;
+}
+
+/*  */
+.stat-images {
+    max-width: 470px;
+    width: 100%;
+    margin: 40px auto;
+}
+.stat-image {
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+.stat-image:last-child {
+    margin-bottom: 0;
+}
+.stat-image img {
+    max-width: 100%;
+    /* scale: 0.9; */
+    border-radius: 10px;
+}
+.stat-container {
+    padding: 80px 0 100px;
+}
+.stat-col-left, .stat-col-right {
+    position: relative;
+}
+.stat-col-left {
+    top: 55px;
+}
+.stat-col-right {
+    top: 0px;
+}
+
+/* CHARTS */
+.chart-container {
+    padding: 80px 0 100px;
+}
+.chart-box {
+    background-color: #15191F;
+    width: max-content;
+    padding: 20px 50px 20px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.chart-icon {
+    width: 60px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.chart-texts {
+    padding: 60px 30px;
+}
+.chart-texts h3 {
+    font-weight: 400;
+    font-size: 28px;
+    text-transform: none !important;
+    color: inherit !important;
+    margin-bottom: 20px;
+}
+.chart-texts h3 span {
+    color: var(--primary);
+    font-weight: 600;
+}
+.chart-texts p {
+    font-size: 18px;
+    max-width: 450px;
+}
+
+.chart-texts ul {
+    
+}
+
+.chart-texts ul li {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.chart-texts ul li::marker {
+    color: var(--primary);
 }
 
 /* BLOG */

@@ -40,19 +40,18 @@
         content="AI-Advisor provides monthly evaluations and market predictions, suggesting which stocks or ETFs to buy, sell, or hold.">
     <meta property="twitter:image" content="https://mavefund.com/static/image/banner.png">
 
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="./iconoir.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link href="./Mave Fund_ AI-Advisor to make better investment decisions_files/site.css" rel="stylesheet">
     <link href="./Mave Fund_ AI-Advisor to make better investment decisions_files/test_mavefund.css" rel="stylesheet">
     <link href="./Mave Fund_ AI-Advisor to make better investment decisions_files/table.css" rel="stylesheet">
     <link href="./Mave Fund_ AI-Advisor to make better investment decisions_files/news.css" rel="stylesheet">
     <link href="./Mave Fund_ AI-Advisor to make better investment decisions_files/ads.css" rel="stylesheet">
-    <script src="./Mave Fund_ AI-Advisor to make better investment decisions_files/config.js"
-        type="text/javascript"></script>
-    <link href="./Mave Fund_ AI-Advisor to make better investment decisions_files/new_test_css_2023.css"
-        rel="stylesheet">
+    <script src="./Mave Fund_ AI-Advisor to make better investment decisions_files/config.js" type="text/javascript"></script>
+    <link href="./Mave Fund_ AI-Advisor to make better investment decisions_files/new_test_css_2023.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./mavefund-home.css">
 
@@ -101,6 +100,8 @@
         type="text/javascript"></script>
     <script src="./Mave Fund_ AI-Advisor to make better investment decisions_files/stripe.js"
         type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="mavefund-home.js"></script>
     <style>
         .positive-change {
@@ -118,102 +119,271 @@
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1188.0" data-gr-ext-installed="">
-    <!-- STOCK SLIDER -->
-    <!-- <nav>
-        <div id="nav-tickers-wrapper">
-            <div id="nav-tickers" class="" style="min-width: 2187px;">
-                <div id="DOW_1" class="nav-ticker">DOW<span class="red">-0.14%</span></div>
-                <div id="NASDAQ_1" class="nav-ticker">NASDAQ<span class="red">-0.06%</span></div>
-                <div id="S&amp;P500_1" class="nav-ticker">S&amp;P500<span class="red">-0.16%</span></div>
-                <div id="S&amp;P/TSX_1" class="nav-ticker">S&amp;P/TSX<span class="red">-0.26%</span></div>
-                <div id="Nikkei 225_1" class="nav-ticker">Nikkei 225<span class="red">-1.11%</span></div>
-                <div id="NIFTY 50_1" class="nav-ticker">NIFTY 50<span class="red">-0.27%</span></div>
-                <div id="DAX_1" class="nav-ticker">DAX<span class="red">-0.66%</span></div>
-                <div id="CAC 40_1" class="nav-ticker">CAC 40<span class="red">-1%</span></div>
-                <div id="FTSE100_1" class="nav-ticker">FTSE100<span class="red">-0.02%</span></div>
-                <div id="Hang Seng_1" class="nav-ticker">Hang Seng<span class="red">-0.91%</span></div>
-                <div id="Singapore_1" class="nav-ticker">Singapore<span class="red">-0.01%</span></div>
-                <div id="Mexico_1" class="nav-ticker">Mexico<span class="red">-0.55%</span></div>
-                <div id="Shanghai_1" class="nav-ticker">Shanghai<span class="red">-0.46%</span></div>
-            </div>
-            <div id="nav-tickers-copy" class="" style="min-width: 2187px;">
-                <div id="DOW_2" class="nav-ticker">DOW<span class="red">-0.14%</span></div>
-                <div id="NASDAQ_2" class="nav-ticker">NASDAQ<span class="red">-0.06%</span></div>
-                <div id="S&amp;P500_2" class="nav-ticker">S&amp;P500<span class="red">-0.16%</span></div>
-                <div id="S&amp;P/TSX_2" class="nav-ticker">S&amp;P/TSX<span class="red">-0.26%</span></div>
-                <div id="Nikkei 225_2" class="nav-ticker">Nikkei 225<span class="red">-1.11%</span></div>
-                <div id="NIFTY 50_2" class="nav-ticker">NIFTY 50<span class="red">-0.27%</span></div>
-                <div id="DAX_2" class="nav-ticker">DAX<span class="red">-0.66%</span></div>
-                <div id="CAC 40_2" class="nav-ticker">CAC 40<span class="red">-1%</span></div>
-                <div id="FTSE100_2" class="nav-ticker">FTSE100<span class="red">-0.02%</span></div>
-                <div id="Hang Seng_2" class="nav-ticker">Hang Seng<span class="red">-0.91%</span></div>
-                <div id="Singapore_2" class="nav-ticker">Singapore<span class="red">-0.01%</span></div>
-                <div id="Mexico_2" class="nav-ticker">Mexico<span class="red">-0.55%</span></div>
-                <div id="Shanghai_2" class="nav-ticker">Shanghai<span class="red">-0.46%</span></div>
-            </div>
-        </div>
-    </nav> -->
-    
-
-    <section class="section-light">
+    <section class="section-dark">
         <!-- NAVIGATION -->
-        <div class="container nav-container">
-            <div class="navbar navbar-expand-lg navbar-light home-navbar">
-                <div class="container-fluid">
+        <div class="nav-container">
+            <div class="container navbar navbar-expand-lg navbar-light home-navbar">
+                <div class="container-fluid justify-content-between">
                     <a class="navbar-brand" href="https://mavefund.com/">
                         <img src="./Mave Fund_ AI-Advisor to make better investment decisions_files/Mavefund_logo_full.png"alt="" class="first">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="https://mavefund.com/">Home</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Services
+                                  <i class="iconoir-nav-arrow-down"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="nav-link" href="https://mavefund.com/treemap_k.html">Map</a>
+                                    <a class="nav-link" href="https://mavefund.com/stock/screener">Screener</a>
+                                    <a class="nav-link" href="https://mavefund.com/macroeconomics.html">Macroeconomics</a>
+                                    <a class="nav-link" href="https://mavefund.com/performance">Performance</a>
+                                </ul>
+                              </li>
                             <a class="nav-link" href="https://mavefund.com/blog.html">Blog</a>
-                            <a class="nav-link" href="https://mavefund.com/treemap_k.html">Map</a>
-                            <a class="nav-link" href="https://mavefund.com/stock/screener">Screener</a>
-                            <a class="nav-link" href="https://mavefund.com/macroeconomics.html">Macroeconomics</a>
-                            <a class="nav-link" href="https://mavefund.com/performance">Performance</a>
                             <a class="nav-link" href="https://mavefund.com/profile.html">Portfolio</a>
+                            <a class="nav-link" href="https://mavefund.com/contact-us">Contact</a>
                         </div>
-                        <div class="d-flex">
-                            <button id="nav-signup-button" class="btn btn-primary nav-auth-button ms-2 p-1 ps-2 pe-2">
-                                Sign up for free
-                            </button>
-                            <div class="login-logout">
-                                <button id="nav-login-button" class="btn btn-light nav-auth-button ms-2 p-1 ps-2 pe-2">
-                                    Log In
-                                </button>
-                                <button id="nav-logout-button" class="btn btn-light nav-auth-button ms-2 p-1 ps-2 pe-2 logout">
-                                    Log Out
-                                </button>
-                            </div>
-                        </div>
+                    </div>
+                    <div class="login-logout">
+                        <button id="nav-login-button" class="btn btn-theme nav-auth-button ms-2 p-1 ps-2 pe-2">
+                            Log In
+                        </button>
+                        <button id="nav-logout-button" class="btn btn-theme nav-auth-button ms-2 p-1 ps-2 pe-2 logout">
+                            Log Out
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
         <!-- HERO -->
         <div class="main-container container">
-            <div class="hero d-flex justify-content-between align-items-center">
-                <div class="hero-text">
-                    <h1><span>WEALTH BUILDING</span> FOR SMALL-SCALE INVESTORS</h1>
-                    <p>Use our Advanced Prediction Model to make better investment decisions, while staying in control of your monthly investments</p>
-                    <button class="btn btn-link"
+            <div class="hero row">
+                <div class="col-md-5 hero-col hero-text">
+                    <img src="./images/hero-arrow.png" alt="">
+                    <h1 class="title"><span>WEALTH BUILDING</span> FOR SMALL-SCALE INVESTORS</h1>
+                    <p class="gray">Use our Advanced Prediction Model to make better investment decisions, while staying in control of your monthly investments</p>
+                    <button class="btn btn-theme"
                         onclick="if (!window.__cfRLUnblockHandlers) return false; redirectToSubscription()">
-                        Subscribe for only <span>$3.99/month</span>
+                        Get started for Free
                     </button>
                 </div>
-                <div class="hero-img">
-                    <img src="./images/hero-img.png" alt="hero">
+                <div class="col-md-4 hero-col">
+                    <div class="hero-img">
+                        <img src="./images/hero-img.png" alt="hero">
+                        <img class="hero-img-blur" src="./images/hero-img-blur.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-3 hero-col">
+                    <div class="d-flex justify-content-center align-items-baseline flex-column">
+                        <div class="hero-usp-box">
+                            <h4>10 Years</h4>
+                            <p class="gray">Trading Experience</p>
+                        </div>
+                        <div class="hero-usp-box">
+                            <h4>24/7</h4>
+                            <p class="gray">Online Support</p>
+                        </div>
+                        <div class="hero-usp-box">
+                            <h4>25K+</h4>
+                            <p class="gray">Satisfied Customer</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="section-dark">
+    <div class="section-light logos-section">
+
+    </div>
+
+    <div class="section-light companies-section">
+        <div class="top-companies-container">
+            <div class="container">
+                <div class="top-companies d-flex align-items-center justify-content-around">
+                    <a href="https://mavefund.com/company?key=META" target="_blank">
+                        <img src="./images/top-company-meta.png" alt="">
+                    </a>
+                    <a href="https://mavefund.com/company?key=AMZN" target="_blank">
+                        <img src="./images/top-company-amazon.png" alt="">
+                    </a>
+                    <a href="https://mavefund.com/company?key=GOOG" target="_blank">
+                        <img src="./images/top-company-alphabet.png" alt="">
+                    </a>
+                    <a href="https://mavefund.com/company?key=AAPL" target="_blank">
+                        <img src="./images/top-company-apple.png" alt="">
+                    </a>
+                    <a href="https://mavefund.com/company?key=MSFT" target="_blank">
+                        <img src="./images/top-company-ms.png" alt="">
+                    </a>
+                    <a href="https://mavefund.com/company?key=TSLA" target="_blank">
+                        <img src="./images/top-company-tesla.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-light features-section">
+        <div class="container">
+            <h3 class="section-title title text-center">Features we have</h3>
+            <p class="section-text section-text-center text-center">Our product has all the features you need, from user-friendly interface to top-notch security.</p>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-img d-flex justify-content-center align-items-center">
+                            <img src="./images/prediction-icon.png" alt="Prediction">
+                        </div>
+                        <h4 class="title">Fundamentals Index</h4>
+                        <p class="gray">Have you checked out the real-time market data? It's crazy! Things are changing!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-img d-flex justify-content-center align-items-center">
+                            <img src="./images/pie-chart-icon.png" alt="">
+                        </div>
+                        <h4 class="title">Company Portfolio</h4>
+                        <p class="gray">Have you checked out the real-time market data? It's crazy! Things are changing!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-img d-flex justify-content-center align-items-center">
+                            <img src="./images/brain-icon.png" alt="Brain">
+                        </div>
+                        <h4 class="title">SP500 prediction</h4>
+                        <p class="gray">Have you checked out the real-time market data? It's crazy! Things are changing!</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-box">
+                        <div class="feature-img d-flex justify-content-center align-items-center">
+                            <img src="./images/chart-icon.png" alt="Chart">
+                        </div>
+                        <h4 class="title">Financial data</h4>
+                        <p class="gray">Have you checked out the real-time market data? It's crazy! Things are changing!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="section-dark index-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="index-preview shadow">
+                        <div class="index-preview-top shadow">
+                           <div class="index-preview-text">
+                                <h4>10K+</h4>
+                                <p>Companies Enlisted</p>
+                           </div>
+                        </div>
+                        <img src="./images/mave-index-animation.gif" alt="Mavefund index">
+                        <img class="index-preview-blur" src="./images/index-preview-blur.png" alt="">
+                        <div class="index-preview-bottom shadow">
+                            <div class="index-preview-text">
+                                <h4>120K+</h4>
+                                <p>Ratings Analyzed</p>
+                           </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3 class="section-title title">Browse through our handpicked <span>Apex Companies</span> in each Sectors</h3>
+                    <p class="section-text text-left">Unlock the full potential of our product with our amazing features and top-notch customer support! Unlock the full potential of our product with our amazing features and top-notch customer support!</p>
+                    <button class="btn btn-theme btn-big"
+                        onclick="if (!window.__cfRLUnblockHandlers) return false; redirectToSubscription()">
+                        See Company Index
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-dark overview-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h3 class="section-title title">Company <span>Overview</span></h3>
+                    <p class="section-text">Unlock the full potential of our product with our amazing features and top-notch customer support!</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <ul class="nav nav-tabs overview-tabs flex-column" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="earning-tab" data-bs-toggle="tab" data-bs-target="#earning" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                Earnings Per Share
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="equity-tab" data-bs-toggle="tab" data-bs-target="#margin" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                                Return on Equity
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="margin-tab" data-bs-toggle="tab" data-bs-target="#margin" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                Net Margin
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="buyback-tab" data-bs-toggle="tab" data-bs-target="#buyback" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                Share Buyback
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="leverage-tab" data-bs-toggle="tab" data-bs-target="#leverage" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                Leverage
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="ratio-tab" data-bs-toggle="tab" data-bs-target="#ratio" type="button" role="tab" aria-controls="contact" aria-selected="false">
+                                Financial Ratio
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8 h-100">
+                    <div class="overview-screenshot-container d-flex justify-content-center align-items-center flex-column">
+                        <div class="overview-screenshot-arrow">
+                            <img src="./images/hero-arrow.png" alt="">
+                        </div>
+                        <div class="tab-content  w-100" id="myTabContent">
+                            <div class="tab-pane overview-tab-pane w-100 fade show active" id="earning" role="tabpanel" aria-labelledby="earning-tab">
+                                <img src="./images/overview-earnings.gif" alt="">
+                            </div>
+                            <div class="tab-pane overview-tab-pane w-100 fade" id="equity" role="tabpanel" aria-labelledby="equity-tab">
+                                <img src="./images/overview-equity.png" alt="">
+                            </div>
+                            <div class="tab-pane overview-tab-pane w-100 fade" id="margin" role="tabpanel" aria-labelledby="margin-tab">
+                                <img src="./images/overview-margin.png" alt="">
+                            </div>
+                            <div class="tab-pane overview-tab-pane w-100 fade" id="buyback" role="tabpanel" aria-labelledby="buyback-tab">
+                                <img src="./images/overview-buyback.png" alt="">
+                            </div>
+                            <div class="tab-pane overview-tab-pane w-100 fade" id="leverage" role="tabpanel" aria-labelledby="leverage-tab">
+                                <img src="./images/overview-leverage.png" alt="">
+                            </div>
+                            <div class="tab-pane overview-tab-pane w-100 fade" id="ratio" role="tabpanel" aria-labelledby="ratio-tab">
+                                <img src="./images/overview-leverage.png" alt="">
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <section class="section-light">
         <div class="main-container container">
-            <!-- SEARCH -->
             <div class="section-container d-flex flex-column">
                 <h3 class="section-title">Search fundamentals for over <span>10,000+</span> companies.</h3>
                 <div class="input-group search">
@@ -371,7 +541,7 @@
                 <div class="col-md-6"></div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     
     
@@ -1813,101 +1983,184 @@
         </div>
     </div> -->
 
-    <div class="section-light">
+    <div class="section-dark blog-section">
         <div class="container main-container blog-container">
-            <div class="section-icon">
-                <img src="./images/news-icon.png" alt="Blogs">
-            </div>   
-            <h3 class="section-title">Weekly <span>Market</span> analysis.</h3>
-            <p class="section-text">Get all the latest News and Blogs and make the informed decision!</p>
+            <div class="d-flex justify-content-between align-items-center">
+                <div class="blog-titles">
+                    <h3 class="section-title title">Weekly <span>Market</span> analysis.</h3>
+                    <p class="section-text m-0">Get all the latest News and Blogs and make the informed decision!</p>
+                </div>
+                <div class="blog-arrows">
+                    <button class="btn" id="blogs-previous">
+                        <i class="iconoir-nav-arrow-left"></i>
+                    </button>
+                    <button class="btn" id="blogs-next">
+                        <i class="iconoir-nav-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
             <div class="blogs row">
                 <div class="col-md-4">
                     <a href="https://mavefund.com/stock/screener" target="_blank" class="blog">
-                            <img src="./Mave Fund_ AI-Advisor to make better investment decisions_files/stock-screener1.jpg"
-                                alt="Stock Screener" class="feature-image">
-                            <p>Stock Screener</p>
+                        <img src="./Mave Fund_ AI-Advisor to make better investment decisions_files/stock-screener1.jpg"
+                            alt="Stock Screener" 
+                            class="feature-image">
+
+                            <span class="badge badge-primary">Primary</span>
+                            <h4 class="title">Stock Screener</h4>
+                            <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt quam nulla tempore, reprehenderit placeat natus.</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="https://mavefund.com/portfolio/AI/yearly" target="_blank" class="blog">
-                            <img src="./Mave Fund_ AI-Advisor to make better investment decisions_files/stock-portfolio1.jpg"
-                                alt="Stock Portfolio" class="feature-image">
-                            <p>Stock Portfolio</p>
+                        <img src="./Mave Fund_ AI-Advisor to make better investment decisions_files/stock-portfolio1.jpg"
+                            alt="Stock Portfolio" class="feature-image">
+                        <span class="badge badge-primary">Primary</span>
+                        <h4 class="title">Stock Screener</h4>
+                        <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt quam nulla tempore, reprehenderit placeat natus.</p>
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="https://mavefund.com/prediction/SP500" target="_blank" class="blog">
-                            <img alt="market prediction" class="feature-image"
-                                src="./Mave Fund_ AI-Advisor to make better investment decisions_files/bull-market1.jpg">
-                            <p>Market Prediction <span>Bullish</span> (Jul 14-Aug 14)</p>
+                        <img alt="market prediction" class="feature-image"
+                            src="./Mave Fund_ AI-Advisor to make better investment decisions_files/bull-market1.jpg">
+                        <span class="badge badge-primary">Primary</span>
+                        <h4 class="title">Stock Screener</h4>
+                        <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt quam nulla tempore, reprehenderit placeat natus.</p>
+                    </a>
                 </div>
-                </a>
+                <div class="col-md-4">
+                    <a href="https://mavefund.com/portfolio/AI/yearly" target="_blank" class="blog">
+                        <img src="./Mave Fund_ AI-Advisor to make better investment decisions_files/stock-portfolio1.jpg"
+                            alt="Stock Portfolio" class="feature-image">
+                        <span class="badge badge-primary">Primary</span>
+                        <h4 class="title">Stock Screener</h4>
+                        <p class="gray">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis nesciunt quam nulla tempore, reprehenderit placeat natus.</p>
+                    </a>
+                </div>
             </div>
         </div>
-        
+    </div>
+
+    <div class="section-light calculator-sector">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="calculator">
+                        <div class="calculator-form">
+                            <div class="range-slider">
+                                <label class="gray" for="">Monthly Investment (<span class="title">$</span>)</label>
+                                <input class="range-slider__range" type="range" id="investmentRange" min="10" max="10000" step="10" value="100">
+                                <!-- <span class="range-slider__value title">0</span> -->
+                                <input type="number" class="range-slider__value" id="investment" pattern="[0-9]*" value="100" step="10">
+                              </div>
+                              
+                              <div class="range-slider">
+                                <label class="gray" for="">Number of Years</label>
+                                <input class="range-slider__range" type="range" id="yearsRange" min="1" max="30" step="1" value="5">
+                                <input type="number"  class="range-slider__value" id="years" value="5" step="1">
+                              </div>
+                              
+                            <div class="range-slider">
+                                <label class="gray" for="">Yearly Investment Return (<span class="title">%</span>)</label>
+                                <input class="range-slider__range" type="range" id="interestRange" min="0.1" max="20" step="0.1" value="5">
+                                <!-- <span class="range-slider__value title">0</span> -->
+                                <input type="number" class="range-slider__value" id="interest" value="10" step="0.1">
+                            </div> 
+
+                            <div class="result-container">
+                                Total Amount:
+                                <h4 class="title" id="result">$35,471</h4>
+                            </div>
+
+                            <button 
+                                class="btn btn-block calculator-form-submit title" 
+                                onclick="calculateCompoundInterest()"> 
+                                <span style="font-weight:bold;">Calculate</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="calculator-text">
+                        <div class="calculator-arrow">
+                            <img src="./images/hero-arrow.png" alt="">
+                        </div>
+                        <h3 class="section-title title"><span>Calculate</span> your Investment Gains</h3>
+                        <p class="section-text">Hey there friend! Have you checked out our platform yet? We're excited to share all the cool things it can do. From helpful features to user-friendly design, you won't want to miss it. Join us and discover more today!</p>
+                        <br>
+                        <button class="btn btn-theme btn-big" onclick="if (!window.__cfRLUnblockHandlers) return false; redirectToSubscription()">
+                            See How It Works
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- footer -->
-    <footer class="footer footer-3 section-dark">
+    <footer class="footer section-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <div class="footer-widget mb-30 wow fadeInLeft">
-                        <div class="footer-text mb-20">
-                            <p class="gray">There are risks associated with investing. The value of your investment may fall or rise. Losses of the capital invested may occur. Past performance, simulations or forecasts are not a reliable indicator of future performance.</p>
+                        <div class="footer-logo">
+                            <img src="./images/Mavefund_logo_full_light.png" alt="Company Logo">
+                            <img class="footer-logo-arrow" src="./images/hero-arrow.png" alt="">
                         </div>
-
+                        <br>
                         <strong>Maverick Tech Ltd</strong>
                         <p class="gray">Bell Yard, London, England, WC2A 2JR </p>
+                        <div class="footer-text mb-20">
+                             <p class="gray">There are risks associated with investing. The value of your investment may fall or rise. Losses of the capital invested may occur.</p>
+                        </div>
+
                     </div>
                 </div>
 
 
-                <div class="col-lg-2 col-sm-6 text-center text-sm-start ms-lg-5 ">
-                    <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="f-widget-title">
-                            <h5 class="gray">Mavefund</h5>
+                <div class="col-md-6 text-center text-sm-start">
+                    <div class="row">
+                        <div class="col-md-4 footer-widget" data-wow-delay="0.1s">
+                            <div class="f-widget-title">
+                                <h5>Mavefund</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="https://mavefund.com"> Home </a></li>
+                                    <li><a href="https://mavefund.com/blog.html"> Blog </a></li>
+                                    <li><a href="https://mavefund.com/about-us"> About us </a></li>
+                                    <li><a href="https://mavefund.com/contact-us"> Contact Us </a></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="footer-link">
-                            <ul>
-                                <li><a href="https://mavefund.com"> Home </a></li>
-                                <li><a href="https://mavefund.com/blog.html"> Blog </a></li>
-                                <li><a href="https://mavefund.com/about-us"> About us </a></li>
-                                <li><a href="https://mavefund.com/contact-us"> Contact Us </a></li>
-                            </ul>
+                        <div class="col-md-4 footer-widget" data-wow-delay="0.3s">
+                            <div class="f-widget-title">
+                                <h5>Services</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="https://mavefund.com/treemap_k.html"> Map </a></li>
+                                    <li><a href="https://mavefund.com/sector_industry.html"> Sector and Industry </a></li>
+                                    <li><a href="https://mavefund.com/profile.html"> Portfolio</a></li>
+                                    <li><a href="https://mavefund.com/stock/screener"> Screener</a></li>
+                                    <li><a href="https://mavefund.com/macroeconomics.html"> Macroeconomics</a></li>
+                                    <li><a href="https://mavefund.com/performance"> Performance</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-2  col-sm-6 text-center text-sm-start ms-lg-5">
-                    <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="f-widget-title">
-                            <h5 class="gray">Services</h5>
-                        </div>
-                        <div class="footer-link">
-                            <ul>
-                                <li><a href="https://mavefund.com/treemap_k.html"> Map </a></li>
-                                <li><a href="https://mavefund.com/sector_industry.html"> Sector and Industry </a></li>
-                                <li><a href="https://mavefund.com/profile.html"> Portfolio</a></li>
-                                <li><a href="https://mavefund.com/stock/screener"> Screener</a></li>
-                                <li><a href="https://mavefund.com/macroeconomics.html"> Macroeconomics</a></li>
-                                <li><a href="https://mavefund.com/performance"> Performance</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-2 col-sm-6 text-center text-sm-start me-0 ms-lg-5">
-                    <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="f-widget-title">
-                            <h5 class="gray">Socials</h5>
-                        </div>
-                        <div class="footer-link">
-                            <ul>
-                                <li><a href="https://www.facebook.com/profile.php?id=100089245975882"> Facebook </a></li>
-                                <li><a href="https://twitter.com/mavefund"> X </a></li>
-                                <li><a href="https://www.linkedin.com/company/mavefund/"> Linkedin </a></li>
-                                <li><a href="https://www.youtube.com/@Mavefund"> Youtube </a></li>
-                            </ul>
+                        <div class="col-md-4 footer-widget" data-wow-delay="0.5s">
+                            <div class="f-widget-title">
+                                <h5>Socials</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=100089245975882"> Facebook </a></li>
+                                    <li><a href="https://twitter.com/mavefund"> X </a></li>
+                                    <li><a href="https://www.linkedin.com/company/mavefund/"> Linkedin </a></li>
+                                    <li><a href="https://www.youtube.com/@Mavefund"> Youtube </a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1917,19 +2170,11 @@
         <div class="copyright pt-25 pb-25">
             <div class="container">
                 <div class="row align-items-baseline">
-                    <div class="col-lg-3 text-center text-lg-start">
-                        <div class="footer-logo">
-                            <img src="./images/Mavefund_logo_full_light.png" alt="Company Logo">
-                        </div>
+                    <div class="col-lg-6">
+                        <p>Copyright&copy; Maverick Tech Ltd, 2024<br class="d-sm-none">|
+                            <a class="ms-0" href="https://mavefund.com/terms-of-use" target="_blank">Term of Use</a>
+                        </p>
                     </div>
-                    <div class="col-lg-6 text-center my-3 my-sm-0">
-                        <div class="copyright-text gray">
-                            <p>Copyright&copy; Maverick Tech Ltd, 2024<br class="d-sm-none">|
-                                <a class="ms-0" href="https://mavefund.com/terms-of-use" target="_blank">Term of Use</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 text-center text-lg-end "></div>
                 </div>
             </div>
         </div>

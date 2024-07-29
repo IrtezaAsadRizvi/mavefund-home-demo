@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", (event) => {
+
+    $("#NavServicesTrigger").click(function(){
+        $('#NavServicesDropdown').toggleClass('show')
+    });
+
     // CALCULATOR
     var rangeSlider = function () {
         var slider = $('.range-slider'),

@@ -155,14 +155,24 @@ html::-webkit-scrollbar-thumb:hover {
     display: none;
 }
 .nav-item .dropdown-menu {
-    background: var(--primary) !important;
+    background: var(--section-dark-bg) !important;
+    padding: 0 !important;
+    border: 1px solid #053223;
+    border-radius: var(--border-radius);
+    overflow: hidden;
 }
 .nav-item .dropdown-menu a {
-    color: var(--text-dark) !important;
+    color: var(--text) !important;
+    min-width: 250px;
+    margin: 0;
+    border-bottom: 1px solid #053223;
+}
+.nav-item .dropdown-menu a:last-child {
+    border-bottom: 0;
 }
 .nav-item .dropdown-menu a:hover {
     background-color: var(--primary-hover) !important;
-    color: var(--text-dark) !important;
+    color: var(--text) !important;
 }
 .nav-link.dropdown-toggle i {
     position: relative;

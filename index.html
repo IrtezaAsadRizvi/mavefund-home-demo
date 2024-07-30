@@ -127,8 +127,8 @@
                     <a class="navbar-brand" href="https://mavefund.com/">
                         <img src="./Mave Fund_ AI-Advisor to make better investment decisions_files/Mavefund_logo_full.png"alt="" class="first">
                     </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggle" type="button">
+                        <i class="iconoir-menu"></i>
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
@@ -153,7 +153,7 @@
                             <a class="nav-link" href="https://mavefund.com/contact-us">Contact</a>
                         </div>
                     </div>
-                    <div class="login-logout">
+                    <div class="login-logout visible-in-web">
                         <button id="nav-login-button" class="btn btn-theme nav-auth-button ms-2 p-1 ps-2 pe-2">
                             Log In
                         </button>
@@ -176,7 +176,7 @@
                         Get started for Free
                     </button>
                 </div>
-                <div class="col-md-4 hero-col">
+                <div class="col-md-4 hero-col visible-in-web">
                     <div class="hero-img">
                         <img src="./images/hero-img.png" alt="hero">
                         <img class="hero-img-blur" src="./images/hero-img-blur.png" alt="">
@@ -235,7 +235,7 @@
 
     <div class="section-light features-section">
         <div class="container">
-            <h3 class="section-title title text-center">Features we have</h3>
+            <h3 class="section-title title text-center"><span>Features</span> we have</h3>
             <p class="section-text section-text-center text-center">Our product has all the features you need, from user-friendly interface to top-notch security.</p>
             <div class="row">
                 <div class="col-md-3">
@@ -299,7 +299,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 index-preview-content">
                     <h3 class="section-title title">Browse through our handpicked <span>Apex Companies</span> in each Sectors</h3>
                     <p class="section-text text-left">Unlock the full potential of our product with our amazing features and top-notch customer support! Unlock the full potential of our product with our amazing features and top-notch customer support!</p>
                     <button class="btn btn-theme btn-big"
@@ -319,16 +319,21 @@
                     <p class="section-text">Unlock the full potential of our product with our amazing features and top-notch customer support!</p>
                 </div>
             </div>
-            <div class="row align-items-center">
+            <div class="row align-items-center visible-in-web">
                 <div class="col-md-4">
                     <ul class="nav nav-tabs overview-tabs flex-column" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="earning-tab" data-bs-toggle="tab" data-bs-target="#earning" type="button" role="tab" aria-controls="home" aria-selected="true">
+                            <button class="nav-link active" id="performance-tab" data-bs-toggle="tab" data-bs-target="#performance" type="button" role="tab" aria-controls="home" aria-selected="true">
+                                Price & Performance
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="earning-tab" data-bs-toggle="tab" data-bs-target="#earning" type="button" role="tab" aria-controls="home" aria-selected="true">
                                 Earnings Per Share
                             </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="equity-tab" data-bs-toggle="tab" data-bs-target="#margin" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                            <button class="nav-link" id="equity-tab" data-bs-toggle="tab" data-bs-target="#equity" type="button" role="tab" aria-controls="profile" aria-selected="false">
                                 Return on Equity
                             </button>
                         </li>
@@ -347,11 +352,6 @@
                                 Leverage
                             </button>
                         </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="ratio-tab" data-bs-toggle="tab" data-bs-target="#ratio" type="button" role="tab" aria-controls="contact" aria-selected="false">
-                                Financial Ratio
-                            </button>
-                        </li>
                     </ul>
                 </div>
                 <div class="col-md-8 h-100">
@@ -360,11 +360,14 @@
                             <img src="./images/hero-arrow.png" alt="">
                         </div>
                         <div class="tab-content  w-100" id="myTabContent">
-                            <div class="tab-pane overview-tab-pane w-100 fade show active" id="earning" role="tabpanel" aria-labelledby="earning-tab">
+                            <div class="tab-pane overview-tab-pane w-100 fade show active" id="performance" role="tabpanel" aria-labelledby="performance-tab">
                                 <img src="./images/overview-earnings.gif" alt="">
                             </div>
+                            <div class="tab-pane overview-tab-pane w-100 fade show" id="earning" role="tabpanel" aria-labelledby="earning-tab">
+                                <img src="./images/overview-earnings.png" alt="">
+                            </div>
                             <div class="tab-pane overview-tab-pane w-100 fade" id="equity" role="tabpanel" aria-labelledby="equity-tab">
-                                <img src="./images/overview-equity.png" alt="">
+                                <img src="./images/overview-margin.gif" alt="">
                             </div>
                             <div class="tab-pane overview-tab-pane w-100 fade" id="margin" role="tabpanel" aria-labelledby="margin-tab">
                                 <img src="./images/overview-margin.png" alt="">
@@ -375,13 +378,39 @@
                             <div class="tab-pane overview-tab-pane w-100 fade" id="leverage" role="tabpanel" aria-labelledby="leverage-tab">
                                 <img src="./images/overview-leverage.png" alt="">
                             </div>
-                            <div class="tab-pane overview-tab-pane w-100 fade" id="ratio" role="tabpanel" aria-labelledby="ratio-tab">
-                                <img src="./images/overview-leverage.png" alt="">
-                            </div>
-                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+        </div>
+        <div class="visible-in-mobile">
+            <ul class="overview-slides flex-column" id="OverviewSlider">
+                <li class="overview-card" role="presentation">
+                    <h4> Price History & Performance </h4>
+                    <img src="./images/overview-earnings.gif" alt="">
+                </li>
+                <li class="overview-card" role="presentation">
+                    <h4> Earnings Per Share </h4>
+                    <img src="./images/overview-earnings.gif" alt="">
+                </li>
+                <li class="overview-card" role="presentation">
+                    <h4> Return on Equity </h4>
+                    <img src="./images/overview-margin.gif" alt="">
+                </li>
+                <li class="overview-card" role="presentation">
+                    <h4> Net Margin </h4>
+                    <img src="./images/overview-margin.png" alt="">
+                </li>
+                <li class="overview-card" role="presentation">
+                    <h4> Share Buyback </h4>
+                    <img src="./images/overview-buyback.png" alt="">
+                </li>
+                <li class="overview-card" role="presentation">
+                    <h4> Leverage </h4>
+                    <img src="./images/overview-leverage.png" alt="">
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -1993,7 +2022,7 @@
                     <h3 class="section-title title">Weekly <span>Market</span> analysis.</h3>
                     <p class="section-text m-0">Get all the latest News and Blogs and make the informed decision!</p>
                 </div>
-                <div class="blog-arrows">
+                <div class="blog-arrows visible-in-web">
                     <button class="btn" id="blogs-previous">
                         <i class="iconoir-nav-arrow-left"></i>
                     </button>
@@ -2042,6 +2071,14 @@
                     </a>
                 </div>
             </div>
+            <div class="blog-arrows visible-in-mobile">
+                <button class="btn" id="blogs-previous">
+                    <i class="iconoir-nav-arrow-left"></i>
+                </button>
+                <button class="btn" id="blogs-next">
+                    <i class="iconoir-nav-arrow-right"></i>
+                </button>
+            </div>
         </div>
     </div>
 
@@ -2086,7 +2123,7 @@
                 </div>
                 <div class="col-md-7">
                     <div class="calculator-text">
-                        <div class="calculator-arrow">
+                        <div class="calculator-arrow visible-in-web">
                             <img src="./images/hero-arrow.png" alt="">
                         </div>
                         <h3 class="section-title title"><span>Calculate</span> your Investment Gains</h3>
@@ -2109,7 +2146,7 @@
                     <div class="footer-widget mb-30 wow fadeInLeft">
                         <div class="footer-logo">
                             <img src="./images/Mavefund_logo_full_light.png" alt="Company Logo">
-                            <img class="footer-logo-arrow" src="./images/hero-arrow.png" alt="">
+                            <img class="footer-logo-arrow visible-in-web" src="./images/hero-arrow.png" alt="">
                         </div>
                         <br>
                         <strong>Maverick Tech Ltd</strong>
@@ -2122,9 +2159,9 @@
                 </div>
 
 
-                <div class="col-md-6 text-center text-sm-start">
+                <div class="col-md-6 text-center text-sm-start footer-links">
                     <div class="row">
-                        <div class="col-md-4 footer-widget" data-wow-delay="0.1s">
+                        <div class="col-lg-3 col-md-4 footer-links-col-1 footer-widget" data-wow-delay="0.1s">
                             <div class="f-widget-title">
                                 <h5>Mavefund</h5>
                             </div>
@@ -2137,7 +2174,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-4 footer-widget" data-wow-delay="0.3s">
+                        <div class="col-lg-3 col-md-4 footer-widget" data-wow-delay="0.3s">
                             <div class="f-widget-title">
                                 <h5>Services</h5>
                             </div>
@@ -2152,7 +2189,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-4 footer-widget" data-wow-delay="0.5s">
+                        <div class="col-lg-3 col-md-4 footer-widget" data-wow-delay="0.5s">
                             <div class="f-widget-title">
                                 <h5>Socials</h5>
                             </div>
@@ -2172,13 +2209,9 @@
         <!-- COPYRIGHT -->
         <div class="copyright pt-25 pb-25">
             <div class="container">
-                <div class="row align-items-baseline">
-                    <div class="col-lg-6">
-                        <p>Copyright&copy; Maverick Tech Ltd, 2024<br class="d-sm-none">|
-                            <a class="ms-0" href="https://mavefund.com/terms-of-use" target="_blank">Term of Use</a>
-                        </p>
-                    </div>
-                </div>
+                <p class="gray">Copyright&copy; Maverick Tech Ltd, 2024<br class="d-sm-none">
+                    <span class="visible-in-web">|</span> <a class="ms-0" href="https://mavefund.com/terms-of-use" target="_blank">Term of Use</a>
+                </p>
             </div>
         </div>
     </footer>

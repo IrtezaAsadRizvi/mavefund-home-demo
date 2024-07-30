@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         $('#NavServicesDropdown').toggleClass('show')
     });
 
+    $('.navbar-toggle').on('click', function(){
+        $('.navbar-collapse').toggleClass('show');
+    });
+
     // CALCULATOR
     var rangeSlider = function () {
         var slider = $('.range-slider'),
@@ -60,6 +64,37 @@ document.addEventListener("DOMContentLoaded", (event) => {
     $('#blogs-next').click(function(){
         $('.blogs').slick('slickNext');
     })
+
+    $('#OverviewSlider').slick({
+        centerMode: false,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        arrows: false,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    slidesToShow: 1,
+                    infinite: true
+
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    infinite: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
 
 
     setTimeout(() => {

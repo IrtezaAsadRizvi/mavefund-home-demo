@@ -324,7 +324,7 @@ button#nav-login-button:hover {
     background-image: url('./images/hero-bg.png');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom center;
     align-items: center;
     display: flex;
 }

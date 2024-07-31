@@ -20,10 +20,11 @@ body {
     font-family: "Open Sans", sans-serif !important;
 }
 html::-webkit-scrollbar {
-    width: 8px;
-
-    @media only screen and (max-width: 768px) {
-        width: 3px;
+    width: 8px;   
+}
+@media only screen and (max-width: 768px) {
+    html::-webkit-scrollbar {
+        width: 3px !important;    
     }
 }
 html::-webkit-scrollbar-track {
@@ -459,10 +460,17 @@ button#nav-login-button:hover {
 }
 @media only screen and (max-width: 768px) {
     .features-section {
-        padding: 80px 20px 60px;
+        padding: 80px 0 60px;
         background-size: contain;
         background-position: top;
     }
+}
+
+.feature-slider .slick-list {
+    padding: 0 10% 0 0 !important;
+}
+.feature-slider .slick-slide {
+    padding: 0 10px;
 }
 
 .feature-box {
@@ -611,7 +619,12 @@ button#nav-login-button:hover {
     height: auto;
     border-radius: var(--border-radius);
 }
-.overview-slides .slick-list{padding:0 10% 0 0 !important;}
+.overview-slides {
+    padding: 0;
+}
+.overview-slides .slick-list{
+    padding:0 10% 0 0 !important;
+}
 .overview-slides .slick-slide {
     padding: 10px;
 }

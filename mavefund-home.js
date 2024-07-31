@@ -65,6 +65,37 @@ document.addEventListener("DOMContentLoaded", (event) => {
         $('.blogs').slick('slickNext');
     })
 
+    $('#FeatureSlider').slick({
+        centerMode: false,
+        centerPadding: '0px',
+        slidesToShow: 3,
+        arrows: false,
+        infinite: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    slidesToShow: 1,
+                    infinite: true
+
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    centerMode: false,
+                    centerPadding: '40px',
+                    infinite: true,
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+
     $('#OverviewSlider').slick({
         centerMode: false,
         centerPadding: '0px',

@@ -40,7 +40,7 @@ html::-webkit-scrollbar-thumb:hover {
 
 @media (min-width: 1200px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl {
-        width: 1300px;
+        width: 1500px;
         max-width: 90% !important;
     }
 }
@@ -93,6 +93,12 @@ html::-webkit-scrollbar-thumb:hover {
 .btn-theme:hover {
     background-color: var(--primary-hover) !important;
     color: var(--text-dark) !important;
+}
+.hover-pop {
+    transition: all 0.15s ease-in-out;
+}
+.hover-pop:hover {
+    transform: scale(1.05);
 }
 .shadow {
     box-shadow: 0 12px 30px var(--section-dark-bg);
@@ -211,6 +217,11 @@ html::-webkit-scrollbar-thumb:hover {
 .nav-link,
 .nav-item {
     margin: 0 5px;
+}
+
+.nav-link:hover,
+.nav-item:hover {
+    color: var(--primary) !important;
 }
 
 .nav-link {
@@ -391,19 +402,70 @@ button#nav-login-button:hover {
     overflow-x: clip;
 }
 
+.logo-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-slider:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 45s slide infinite linear;
+}
+
+.logos-slide a {
+    width: 183px;
+    height: auto;
+    margin: 0 20px;
+    color: transparent !important;
+    text-decoration: none !important;
+    display: inline-block;
+}
+.logos-slide a img {
+    width: 90%;
+}
+
+@media only screen and (max-width: 992px) {
+    .logos-slide a {
+        width: 94px;
+        height: auto;
+        margin: 0 10px;
+    }
+    /* .logos-slide a img {
+        width: 90%;
+    } */
+}
+@media only screen and (max-width: 768px) {
+    
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 .top-companies-container {
     position: relative;
     background-color: #002A1E;
     width: 100%;
     height: 100%;
-    padding: 40px;
+    padding: 30px 0;
     overflow-x: hidden;
     border-top: 5px solid #00150F;
     border-bottom: 5px solid #00150F;
 }
 @media only screen and (max-width: 768px) {
     .top-companies-container {
-        padding: 40px 20px;
+        padding: 40px 0;
     }
 }
 
@@ -420,34 +482,6 @@ button#nav-login-button:hover {
     z-index: 0;
     background-color: #003E2C;
     transform: rotate(358deg);
-}
-
-.top-companies {
-    width: 100%;
-    position: relative;
-    flex-wrap: wrap;
-}
-.top-companies a {
-    text-align: center;
-}
-.top-companies a img {
-    max-width: 135px;
-    width: 100%;
-    height: auto;
-}
-@media only screen and (max-width: 992px) {
-    .top-companies a {
-        width: 15%;
-    }
-}
-@media only screen and (max-width: 768px) {
-    .top-companies a {
-        flex: 33%;
-        margin: 20px auto;
-    }
-    .top-companies a img {
-        max-width: 95px;
-    }
 }
 
 /* FEATURES */
@@ -736,7 +770,13 @@ button#nav-login-button:hover {
 
 
 /* SEARCH */
-
+.search-section {
+    padding: 100px 20px 80px;
+    background-image: url('./images/seach-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
 .search {
     width: 100% !important;
     max-width: 950px;
@@ -761,10 +801,22 @@ button#nav-login-button:hover {
     color: var(--text-secondary);
     text-decoration: none;
     cursor: pointer !important;
+    font-size: 16px;
 }
 
 .search-companies a:hover {
     color: var(--primary);
+}
+
+@media only screen and (max-width: 768px) {
+    .search-companies {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .search-companies a {
+        width: 50%;
+        display: inline-block;
+    }
 }
 
 .search button {
@@ -925,7 +977,7 @@ button#nav-login-button:hover {
 .range-slider__range {
     -webkit-appearance: none;
     appearance: none;
-    width: calc(100% - (73px));
+    width: calc(100% - (100px));
     height: 10px;
     border-radius: 5px;
     background: transparent;
@@ -978,7 +1030,7 @@ button#nav-login-button:hover {
 }
 
 #investment {
-    /* width: 60px !important; */
+    width: 80px !important;
     text-align: center !important;
 }
 

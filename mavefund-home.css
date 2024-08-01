@@ -1229,6 +1229,7 @@ input::-moz-focus-outer {
 
 .blogs {
     padding-top: 30px;
+    max-width: 100dvw;
 }
 
 .blog {

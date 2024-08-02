@@ -574,7 +574,7 @@ button#nav-login-button:hover {
 .overview-tabs .nav-item .nav-link {
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: transparent !important;
+    background-color: transparent ;
     color: var(--text);
     border: 1px solid #1B2D29;
     font-size: 18px;
@@ -592,12 +592,13 @@ button#nav-login-button:hover {
 }
 
 .overview-tabs .nav-link.active {
-    background-color: #1B2D29 !important;
+    background-color: #117D58 !important;
     box-shadow: 0 12px 30px var(--section-dark-bg);
 }
 
 .overview-tabs .nav-link:hover {
-    background-color: #1b2d29 !important;
+    background-color: #1B2D29 ;
+    color: var(--text) !important;
     border: 0 !important;
 }
 

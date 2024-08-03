@@ -104,6 +104,7 @@ const initiateBlogs = async () => {
     }
     
     const blogsContainer = document.querySelector('.blogs');
+    const blogLoaders = document.querySelectorAll('.blog-loader')
     blogs.forEach(item => {
         const colItem = document.createElement('div');
         colItem.className = "col-md-4";
@@ -135,6 +136,10 @@ const initiateBlogs = async () => {
         blogItem.appendChild(title);
         blogItem.appendChild(paragraph);
         colItem.appendChild(blogItem)
+
+        blogLoaders.forEach(loader => {
+            loader.remove()
+        });        
 
         blogsContainer.appendChild(colItem);
     });

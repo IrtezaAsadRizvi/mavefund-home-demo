@@ -1256,6 +1256,10 @@ input::-moz-focus-outer {
     border-radius: var(--border-radius);
 }
 
+.blog-loader .blog {
+    min-height: 550px;
+}
+
 .blog-titles {
     padding: 40px 20px;
 }

@@ -1219,6 +1219,18 @@ input::-moz-focus-outer {
     padding: 80px 0 100px;
 }
 
+.slick-track
+{
+    display: flex !important;
+}
+.slick-slide
+{
+    height: inherit !important;
+}
+.slick-slide > div, .slick-slide .col-md-4 {
+    height: 100%;
+}
+
 @media only screen and (max-width: 768px) {
     .blog-section {
         background-size: cover;
@@ -1237,6 +1249,7 @@ input::-moz-focus-outer {
     display: block;
     text-decoration: none !important;
     width: 90%;
+    height: 100%;
     margin: 0 auto;
     padding: 24px;
     background-color: #1B2D29;
@@ -1307,7 +1320,7 @@ input::-moz-focus-outer {
 
 /* FOOTER */
 .footer {
-    padding-top: 160px;
+    padding-top: 100px;
     padding-bottom: 80px;
     background-image: url('./images/footer-bg.png');
     background-size: contain;
@@ -1393,4 +1406,11 @@ footer a:hover {
 
 .copyright {
     padding-top: 80px;
+}
+
+.footer-legal {
+    font-size: 20px;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 80px;
 }

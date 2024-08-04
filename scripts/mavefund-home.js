@@ -77,7 +77,7 @@ const initiateBlogsSlider = () => {
 const initiateBlogs = async () => {
     let blogs;
     try {
-        const blogResponse = await fetch('https://mavefund.com/api/v1/market/get_latest_blog')
+        const blogResponse = await fetch('https://mavefund.com/api/v1/blogs/get_latest_blog')
         const {data} = await blogResponse.json()
         blogs = data
     } catch (err) {

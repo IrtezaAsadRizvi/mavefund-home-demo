@@ -409,7 +409,7 @@ button#nav-login-button:hover {
 
 .logos-slide {
     display: inline-block;
-    animation: 45s slide infinite linear;
+    animation: 135s slide infinite linear;
 }
 
 .logos-slide a {
@@ -506,6 +506,7 @@ button#nav-login-button:hover {
     background-color: var(--section-dark-bg);
     border-radius: var(--border-radius);
     padding: 16px;
+    height: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -824,6 +825,7 @@ button#nav-login-button:hover {
     text-decoration: none;
     display: flex;
     box-shadow: 0 4px 12px rgba(0, 0, 0, .2);
+    overflow: hidden;
 }
 
 .search input {
@@ -832,6 +834,10 @@ button#nav-login-button:hover {
     color: var(--text);
     padding: 10px;
     text-align: left !important;
+}
+.search button {
+    border: none !important;
+    margin: 0;
 }
 
 .search-companies {
@@ -978,6 +984,7 @@ button#nav-login-button:hover {
     border-top-right-radius: 30px;
     border-bottom-left-radius: 30px;
     transition: all 0.15s ease-in-out;
+    color: var(--text) !important;
 }
 
 @media only screen and (max-width: 768px) {

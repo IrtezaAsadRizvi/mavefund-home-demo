@@ -13,7 +13,7 @@
     --light: #FFFFFF;
     --text-dark: #0C263A;
     --border-radius: 8px;
-    --mave-bg: #2A3037;
+    --mave-bg: #2A2E37;
 }
 
 /* GENERAL */
@@ -820,7 +820,6 @@ button#nav-login-button:hover {
     justify-content: center;
     height: 56px;
     align-items: center;
-    margin-top: 32px;
     font-size: 17px;
     text-decoration: none;
     display: flex;

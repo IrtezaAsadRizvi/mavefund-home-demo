@@ -28,10 +28,18 @@ const initiateInvestmentCalculator = () => {
     }, 1000)
 }
 
+function isTouchDevice() {
+    return (('ontouchstart' in window) ||
+       (navigator.maxTouchPoints > 0) ||
+       (navigator.msMaxTouchPoints > 0));
+}
+
 const handleNavigationDropdownClick = () => {
-    $("#NavServicesTrigger").click(function () {
-        $('#NavServicesDropdown').toggleClass('show')
-    });
+    if(!isTouchDevice()) {
+        $("#NavServicesTrigger").click(function () {
+            $('#NavServicesDropdown').toggleClass('show')
+        });
+    }    
     $('.navbar-toggle').on('click', function () {
         $('.navbar-collapse').toggleClass('show');
     });
